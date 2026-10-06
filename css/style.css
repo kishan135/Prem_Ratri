@@ -608,11 +608,16 @@ a {
     transition: opacity 0.2s ease;
 }
 
-.footer-contact-item svg {
-    width: 17px;
-    height: 17px;
+.footer-contact-item > svg {
+    width: 17px !important;
+    height: 17px !important;
+    min-width: 17px !important;
+    min-height: 17px !important;
+    max-width: 17px !important;
+    max-height: 17px !important;
+    flex: 0 0 17px !important;
+    display: block;
     fill: currentColor;
-    flex-shrink: 0;
 }
 
 .footer-contact-item:hover {
@@ -632,13 +637,20 @@ a {
     }
 
     .footer-contact-item {
+        display: inline-flex;
+        align-items: center;
         font-size: 13px;
         gap: 6px;
     }
 
-    .footer-contact-item svg {
-        width: 15px;
-        height: 15px;
+    .footer-contact-item > svg {
+        width: 15px !important;
+        height: 15px !important;
+        min-width: 15px !important;
+        min-height: 15px !important;
+        max-width: 15px !important;
+        max-height: 15px !important;
+        flex: 0 0 15px !important;
     }
 }
 
