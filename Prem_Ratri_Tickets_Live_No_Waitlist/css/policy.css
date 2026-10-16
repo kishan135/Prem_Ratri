@@ -1,0 +1,33 @@
+:root{--yellow:#ffe100;--edge:clamp(20px,4vw,64px);--g1:#cf3f88;--g2:#e57fb2;--g3:#fbd6e7;--m:#efd9f5;--b1:#8b3fd1;--b2:#d6c2f7;--b3:#46207f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#3f3c48;line-height:1.75;
+  background:linear-gradient(180deg,var(--g1) 0,var(--g2) 130px,var(--g3) 260px,var(--m) 50%,var(--b2) calc(100% - 220px),var(--b1) 100%) no-repeat #f7f6fb}
+body.tone-purple{--g1:#6a2fb5;--g2:#9a6bd8;--g3:#e3d5fa;--m:#f4d9ee;--b1:#cf3f88;--b2:#f8c3dc;--b3:#b8337d}
+.policy-header{display:flex;justify-content:space-between;align-items:center;padding:24px var(--edge)}
+.policy-logo{display:flex;align-items:center;transform:translateY(10px)}
+.policy-logo img{width:110px;height:auto;display:block}
+.policy-back{color:#fff;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.04em;transform:translateY(10px)}
+.policy-back:hover{text-decoration:underline}
+.policy-page{max-width:860px;margin:0 auto;padding:10px 24px 60px}
+.policy-page h1{margin:0 0 28px;font-size:clamp(28px,4vw,42px);color:#1f1d27;line-height:1.2}
+.policy-page h3{margin:28px 0 8px;font-size:17px;color:#222}
+.policy-page p{margin:0 0 15px}
+.policy-page ul{padding-left:20px}
+.footer{background:linear-gradient(180deg,rgba(255,255,255,0) 0,var(--b1) 140px,var(--b3) 100%);color:#fff;text-align:center;padding:170px 24px 45px}
+.footer-logo{color:var(--yellow);font-weight:900;font-size:26px;letter-spacing:-.05em}
+.footer-date{color:#fff;font-size:11px;letter-spacing:.18em;margin:8px 0 28px}
+.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 24px;max-width:980px;margin:0 auto}
+.footer-links a{color:rgba(255,255,255,.92);text-decoration:none;padding:7px 0;font-family:Georgia,serif;font-size:15px}
+.footer-links a:hover{color:var(--yellow);text-decoration:underline}
+.footer-rule{height:1px;background:rgba(255,255,255,.18);max-width:620px;margin:28px auto 20px}
+.footer-copyright-logo{display:flex;justify-content:center;align-items:center;margin-top:20px}
+.footer-copyright-logo img{width:150px;height:auto;display:block}
+@media(max-width:700px){:root{--edge:16px}.footer{padding:150px 18px 36px}.footer-links{flex-direction:column;gap:2px}.policy-logo img{width:80px}.policy-page{padding:6px 18px 44px}}
+@media(max-width:700px){
+  .policy-logo img{width:80px}
+  .policy-logo{transform:translateY(3px)}
+}
+h1, h2, h3{text-align:center}
+@media(max-width:700px){
+  .policy-page h1{margin-top:25px}
+}
